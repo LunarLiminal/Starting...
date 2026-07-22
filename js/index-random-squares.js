@@ -3,6 +3,15 @@ const animations = {
         "startup-flicker-1-square",
         "startup-flicker-2-square",
         "startup-flicker-3-square"
+    ],
+
+    restart: [
+        "restart-flicker-1-square",
+        "restart-flicker-2-square",
+        "restart-flicker-3-square",
+        "restart-flicker-4-square",
+        "restart-flicker-5-square",
+        "restart-flicker-6-square"
     ]
 };
 
