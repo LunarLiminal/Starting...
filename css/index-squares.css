@@ -1,0 +1,151 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 100%;
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.skipped-square {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+
+.startup-flicker-1-square {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: startup-flicker-1 2s steps(1, end) forwards;
+}
+
+@keyframes startup-flicker-1 {
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    8%   { opacity: 0; }
+    12%  { opacity: 1; }
+    15%  { opacity: 0; }
+    19%  { opacity: 1; }
+    22%  { opacity: 0; }
+    40%  { opacity: 1; }
+    43%  { opacity: 0; }
+    63%  { opacity: 1; }
+    66%  { opacity: 0; }
+    75%  { opacity: 0; }
+    95%  { opacity: 1; }
+}
+
+.startup-flicker-2-square {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: startup-flicker-2 2s steps(1, end) forwards;
+}
+
+@keyframes startup-flicker-2 {
+    0%   { opacity: 0; }
+    4%   { opacity: 1; }
+    7%   { opacity: 0; }
+    9%   { opacity: 1; }
+    12%  { opacity: 0; }
+    19%  { opacity: 1; }
+    22%  { opacity: 0; }
+    43%  { opacity: 1; }
+    49%  { opacity: 0; }
+    78%  { opacity: 1; }
+    82%  { opacity: 0; }
+    86%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.startup-flicker-3-square {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: startup-flicker-3 2s steps(1, end) forwards;
+}
+
+@keyframes startup-flicker-3 {
+    0%   { opacity: 0; }
+    7%   { opacity: 1; }
+    10%  { opacity: 0; }
+    16%  { opacity: 1; }
+    21%  { opacity: 0; }
+    29%  { opacity: 1; }
+    32%  { opacity: 0; }
+    61%  { opacity: 1; }
+    76%  { opacity: 0; }
+    90%  { opacity: 1; }
+}
+
+.instant-flicker-square {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: instant-flicker 1.5s infinite steps(1, end);
+}
+
+@keyframes instant-flicker {
+    6%   { opacity: 1; }
+    12%  { opacity: 0; }
+    24%  { opacity: 1; }
+    30%  { opacity: 0; }
+    36%  { opacity: 0; }
+    56%  { opacity: 1; }
+    84%  { opacity: 0; }
+}
+
+.fluent-flicker-square {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: 
+        startup-flicker-1 2s steps(1, end) forwards,
+        fluent-flicker 3s infinite 2s;
+}
+
+@keyframes fluent-flicker {
+    0%   { opacity: 1; }
+    7%   { opacity: 0; }
+    14%  { opacity: 1; }
+    18%  { opacity: 0; }
+    22%  { opacity: 0; }
+    26%  { opacity: 1; }
+    39%  { opacity: 0; }
+    44%  { opacity: 1; }
+    68%  { opacity: 1; }
+    74%  { opacity: 0; }
+    79%  { opacity: 1; }
+}
